@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+  margin: 0px;
   padding: 0;
   box-sizing: border-box;
 }
@@ -17,6 +17,8 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh; /* height: 100vh; */
+
+  overflow-x: hidden;
 }
 
 main {
@@ -168,6 +170,22 @@ footer {
   .header-nav,
   .div-logo {
     margin: 0;
+  }
+
+  .header-nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .header-nav ul li a {
+    padding: 1rem;
+    font-size: 1.8rem;
+  }
+
+  .footer-list {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
